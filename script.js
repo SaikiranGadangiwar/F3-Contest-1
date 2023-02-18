@@ -25,7 +25,7 @@ fetch("https://dummyjson.com/products")
 
             const productElement = document.createElement("div");
             productElement.innerHTML = `
-              <div class="product-image" style="background-image: url(${productName})"></div>
+              <div class="product-image" style="background-image: url(${productValues.image})"></div>
               <div class="product-details">
                 <h2 class="product-name">${productName}</h2>
                 <p class="product-price">Price: $${productPrice}</p>
@@ -33,7 +33,7 @@ fetch("https://dummyjson.com/products")
                 <p class="product-stock">Stock: ${product.stock}</p>
               </div>
             `;
-            
+
   
             productList.appendChild(productElement);
           });
